@@ -16,7 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ValidationActivity"></activity>
+        <activity android:name=".ValidationActivity" />
+        <activity
+            android:name=".JsonRequestActivity"
+            android:label="@string/title_activity_json_request"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".RadioBtnCheckBoxActivity" />
+        <activity android:name=".QRScanerActivity" />
+        <activity android:name=".CustomSpinnerActivity" />
+        <activity android:name=".AlertBoxActivity"></activity>
     </application>
 
 </manifest>
