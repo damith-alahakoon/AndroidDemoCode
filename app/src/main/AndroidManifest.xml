@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="sample.damith.com.mydemocode">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,7 +30,9 @@
         <activity android:name=".RadioBtnCheckBoxActivity" />
         <activity android:name=".QRScanerActivity" />
         <activity android:name=".CustomSpinnerActivity" />
-        <activity android:name=".AlertBoxActivity"></activity>
+        <activity android:name=".AlertBoxActivity" />
+        <activity android:name=".CustomListViewActivity" />
+        <activity android:name=".LogFileActivity"></activity>
     </application>
 
 </manifest>
