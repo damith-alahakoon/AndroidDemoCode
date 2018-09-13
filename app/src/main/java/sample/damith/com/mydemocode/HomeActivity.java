@@ -21,6 +21,9 @@ public class HomeActivity extends AppCompatActivity {
     public void testListView(View view){
         startActivity(new Intent(HomeActivity.this,ListViewActivity.class));
     }
+    public void uploadFileVolly(View view){
+        startActivity(new Intent(HomeActivity.this,UploadFileVollyActivity.class));
+    }
     public void testQR(View view){
         startActivity(new Intent(HomeActivity.this,QRScanerActivity.class));
     }

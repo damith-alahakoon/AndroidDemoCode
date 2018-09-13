@@ -32,7 +32,8 @@
         <activity android:name=".CustomSpinnerActivity" />
         <activity android:name=".AlertBoxActivity" />
         <activity android:name=".CustomListViewActivity" />
-        <activity android:name=".LogFileActivity"></activity>
+        <activity android:name=".LogFileActivity" />
+        <activity android:name=".UploadFileVollyActivity"></activity>
     </application>
 
 </manifest>

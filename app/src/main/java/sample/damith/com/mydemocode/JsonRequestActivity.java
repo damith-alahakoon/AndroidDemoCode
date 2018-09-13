@@ -9,22 +9,24 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.VolleyLog;
-import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class JsonRequestActivity extends AppCompatActivity {
-    private String urlJsonArry = "https://api.androidhive.info/volley/person_array.json";
-    private  String TAG="JsonRequestActivity";
+    //private String urlJsonArry = "https://api.androidhive.info/volley/person_array.json";
+    private String TAG = "JsonRequestActivity";
     private TextView txtResponse;
     private ProgressDialog pDialog;
+    private JSONArray result;
 
     // temporary string to show the parsed response
     private String jsonResponse;
@@ -49,71 +51,69 @@ public class JsonRequestActivity extends AppCompatActivity {
         pDialog.setMessage("Please wait...");
         pDialog.setCancelable(false);
     }
-    public void readJsonArray(View view){
+
+    public void readJsonArray(View view) {
         makeJsonObjectRequest();
     }
 
     private void makeJsonObjectRequest() {
-        JsonArrayRequest req = new JsonArrayRequest(urlJsonArry,
-                new Response.Listener<JSONArray>() {
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        try {
+            JSONObject jsonBody = new JSONObject();
+
+            jsonBody.put("terminalId", "POCMBC01");
+            Log.d("request_login ", String.valueOf(jsonBody));
+
+
+        JsonObjectRequest stringRequest = new JsonObjectRequest(Request.Method.POST, "http://52.15.177.150/pos/public/checkLogUpdate", jsonBody,
+                new Response.Listener<JSONObject>() {
                     @Override
-                    public void onResponse(JSONArray response) {
-                        Log.d(TAG, response.toString());
-
+                    public void onResponse(JSONObject response) {
+                        Log.d("main", "response:------------------------------- ");
+                        Log.d("main", "response: " + response);
+                        JSONObject j = null;
                         try {
-                            // Parsing json array response
-                            // loop through each json object
-                            jsonResponse = "";
-                            for (int i = 0; i < response.length(); i++) {
 
-                                JSONObject person = (JSONObject) response
-                                        .get(i);
+                            //  j = new JSONObject(response);
 
-                                String name = person.getString("name");
-                                String email = person.getString("email");
-                                JSONObject phone = person.getJSONObject("phone");
-                                String home = phone.getString("home");
-                                String mobile = phone.getString("mobile");
+                            result = j.getJSONArray("true");
 
-                                jsonResponse += "Name: " + name + "\n\n";
-                                jsonResponse += "Email: " + email + "\n\n";
-                                jsonResponse += "Home: " + home + "\n\n";
-                                jsonResponse += "Mobile: " + mobile + "\n\n\n";
-
-                            }
-
-                            txtResponse.setText(jsonResponse);
-
+                            getBusinessType(result);
                         } catch (JSONException e) {
                             e.printStackTrace();
-                            Toast.makeText(getApplicationContext(),
-                                    "Error: " + e.getMessage(),
-                                    Toast.LENGTH_LONG).show();
                         }
-
-                        hidepDialog();
                     }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                VolleyLog.d(TAG, "Error: " + error.getMessage());
-                Toast.makeText(getApplicationContext(),
-                        error.getMessage(), Toast.LENGTH_SHORT).show();
-               hidepDialog();
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                    }
+                });
+
+        //Creating a request queue
+        requestQueue.add(stringRequest);
+        } catch (JSONException e) {
+            e.printStackTrace();
+
+        }
+
+    }
+
+    private void getBusinessType(JSONArray j) {
+        //Traversing through all the items in the json array
+
+        for (int i = 0; i < j.length(); i++) {
+            try {
+                JSONObject json = j.getJSONObject(i);
+
+                //  bussinessType.add(json.getString("name"));
+            } catch (JSONException e) {
+                e.printStackTrace();
             }
-        });
+        }
 
-        // Adding request to request queue
-        AppController.getInstance().addToRequestQueue(req);
-    }
-    private void showpDialog() {
-        if (!pDialog.isShowing())
-            pDialog.show();
     }
 
-    private void hidepDialog() {
-        if (pDialog.isShowing())
-            pDialog.dismiss();
-    }
 
 }
