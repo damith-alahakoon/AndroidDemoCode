@@ -51,7 +51,7 @@ public class HomeActivity extends AppCompatActivity {
     public void customToast(View view){
         startActivity(new Intent(HomeActivity.this,CustomToastActivity.class));
     }
-    public void formVatlidation(View view){
+    public void formValidation(View view){
         startActivity(new Intent(HomeActivity.this,FormValidationActivity.class));
     }
     public void recylerTest(View view){

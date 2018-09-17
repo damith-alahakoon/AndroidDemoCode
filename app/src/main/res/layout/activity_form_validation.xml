@@ -1,9 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FormValidationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username" />
+
+        <EditText
+            android:id="@+id/edTxt_userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:cursorVisible="true"
+            android:ellipsize="end"
+            android:ems="10"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:hint="User Name"
+            android:imeActionId="6"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:textColorHint="@color/color_wight"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email " />
+        <EditText
+            android:id="@+id/edTxt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:cursorVisible="true"
+            android:ellipsize="end"
+            android:ems="10"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:hint="Email"
+            android:imeActionId="6"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:textColorHint="@color/color_wight"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nic " />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Login "
+            android:onClick="loging"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
