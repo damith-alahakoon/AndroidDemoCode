@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.android.volley.NetworkResponse;
 import com.android.volley.NoConnectionError;
@@ -27,11 +28,14 @@ import sample.damith.com.mydemocode.other.VolleyMultipartRequest;
 import sample.damith.com.mydemocode.other.VolleySingleton;
 
 public class UploadFileVollyActivity extends AppCompatActivity {
+    ImageView mAvatarImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload_file_volly);
+
+        mAvatarImage =  findViewById(R.id.imageView1);
     }
 
     protected void uploadFile(View view) {
@@ -119,7 +123,10 @@ public class UploadFileVollyActivity extends AppCompatActivity {
                 SimpleDateFormat s = new SimpleDateFormat("yyyy-MM-dd");
                 String day = s.format(new Date());
                 File logFile = new File("sdcard/data/log-"+day+".log");
-                params.put("file", new DataPart("log-"+day+".log",logFile, "image/jpeg"));
+
+              //  params.put("file", new DataPart("log-"+day+".log",logFile, "image/jpeg"));
+              params.put("avatar", new DataPart("log-"+day+".log", AppHelper.getFileDataFromDrawable(getBaseContext(), mAvatarImage.getDrawable()), "text/pain"));
+
 
                 return params;
             }

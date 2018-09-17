@@ -156,7 +156,7 @@ public class VolleyMultipartRequest extends Request<NetworkResponse> {
         for (Map.Entry<String, DataPart> entry : data.entrySet()) {
             buildDataPart(dataOutputStream, entry.getValue(), entry.getKey());
         }
-    }
+}
 
     /**
      * Write string data into header and data output stream.
@@ -226,7 +226,6 @@ public class VolleyMultipartRequest extends Request<NetworkResponse> {
          */
         public DataPart(String name, File logFile, String mimeType) {
         }
-
         /**
          * Constructor with data.
          *

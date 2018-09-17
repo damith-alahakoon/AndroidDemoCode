@@ -24,7 +24,7 @@ public class LogFileActivity extends AppCompatActivity {
         String inputData = inputName.getText().toString();
 
         logData.appendLog("Savedata", inputData, true);
-        Toast.makeText(this, "save "+inputData, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "save " + inputData, Toast.LENGTH_SHORT).show();
     }
 
 }

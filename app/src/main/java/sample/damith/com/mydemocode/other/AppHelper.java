@@ -42,6 +42,7 @@ public class AppHelper {
         return byteArrayOutputStream.toByteArray();
     }
 
+
 //    public void openFile() {
 //        File file = new File(Environment.getExternalStorageDirectory(),
 //                "Report.pdf");

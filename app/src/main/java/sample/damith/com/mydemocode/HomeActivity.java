@@ -13,7 +13,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
     }
     public void inputValidation(View view){
-        startActivity(new Intent(HomeActivity.this,ValidationActivity.class));
+        startActivity(new Intent(HomeActivity.this,CustomToastActivity.class));
     }
     public void testJson(View view){
         startActivity(new Intent(HomeActivity.this,JsonRequestActivity.class));
@@ -27,20 +27,35 @@ public class HomeActivity extends AppCompatActivity {
     public void testQR(View view){
         startActivity(new Intent(HomeActivity.this,QRScanerActivity.class));
     }
+    public void generateQRBarcode(View view){
+        startActivity(new Intent(HomeActivity.this,QRandBarcodeGenerateActivity.class));
+    }
     public void testFireBase(View view){
-        startActivity(new Intent(HomeActivity.this,ValidationActivity.class));
+        startActivity(new Intent(HomeActivity.this,CustomToastActivity.class));
+    }
+    public void testStyle(View view){
+        startActivity(new Intent(HomeActivity.this,CustomStyleActivity.class));
     }
     public void testAsynTask(View view){
-        startActivity(new Intent(HomeActivity.this,ValidationActivity.class));
+        startActivity(new Intent(HomeActivity.this,CustomToastActivity.class));
     }
     public void testAlertBox(View view){
-        startActivity(new Intent(HomeActivity.this,ValidationActivity.class));
+        startActivity(new Intent(HomeActivity.this,AlertBoxActivity.class));
     }
     public void testRadio(View view){
         startActivity(new Intent(HomeActivity.this,RadioBtnCheckBoxActivity.class));
     }
     public void saveLogs(View view){
         startActivity(new Intent(HomeActivity.this,LogFileActivity.class));
+    }
+    public void customToast(View view){
+        startActivity(new Intent(HomeActivity.this,CustomToastActivity.class));
+    }
+    public void formVatlidation(View view){
+        startActivity(new Intent(HomeActivity.this,FormValidationActivity.class));
+    }
+    public void recylerTest(View view){
+        startActivity(new Intent(HomeActivity.this,RecyclerViewActivity.class));
     }
 
 }

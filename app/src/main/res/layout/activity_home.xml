@@ -44,13 +44,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:text="QR and Barcode generation"
+            android:onClick="generateQRBarcode"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Upload File"
             android:onClick="uploadFileVolly"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="radio Button"
+            android:text="Radio Button/CheckBox"
             android:onClick="testRadio"/>
         <Button
             android:layout_width="wrap_content"
@@ -94,6 +100,24 @@
             android:onClick="saveLogs"
             android:layout_marginTop="10dp"
             android:text="Save Logs"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="customToast"
+            android:layout_marginTop="10dp"
+            android:text="Custom Toast"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="recylerTest"
+            android:layout_marginTop="10dp"
+            android:text="Test RecyclerView"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="formVatlidation"
+            android:layout_marginTop="10dp"
+            android:text="Form Validation"/>
 
     </LinearLayout>
     </ScrollView>

@@ -21,7 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ValidationActivity" />
+        <activity android:name=".CustomToastActivity" />
         <activity
             android:name=".JsonRequestActivity"
             android:label="@string/title_activity_json_request"
@@ -33,7 +33,11 @@
         <activity android:name=".AlertBoxActivity" />
         <activity android:name=".CustomListViewActivity" />
         <activity android:name=".LogFileActivity" />
-        <activity android:name=".UploadFileVollyActivity"></activity>
+        <activity android:name=".UploadFileVollyActivity" />
+        <activity android:name=".FormValidationActivity" />
+        <activity android:name=".RecyclerViewActivity" />
+        <activity android:name=".QRandBarcodeGenerateActivity" />
+        <activity android:name=".CustomStyleActivity"></activity>
     </application>
 
 </manifest>
