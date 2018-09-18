@@ -24,6 +24,9 @@ public class HomeActivity extends AppCompatActivity {
     public void uploadFileVolly(View view){
         startActivity(new Intent(HomeActivity.this,UploadFileVollyActivity.class));
     }
+    public void testCalender(View view){
+        startActivity(new Intent(HomeActivity.this,TestCalenderActivity.class));
+    }
     public void testQR(View view){
         startActivity(new Intent(HomeActivity.this,QRScanerActivity.class));
     }
@@ -53,6 +56,9 @@ public class HomeActivity extends AppCompatActivity {
     }
     public void formValidation(View view){
         startActivity(new Intent(HomeActivity.this,FormValidationActivity.class));
+    }
+    public void bottomNaviBarTest(View view){
+        startActivity(new Intent(HomeActivity.this,BottomNavigationBarActivity.class));
     }
     public void recylerTest(View view){
         startActivity(new Intent(HomeActivity.this,RecyclerViewActivity.class));
