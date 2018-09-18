@@ -19,8 +19,10 @@ allprojects {
     repositories {
         google()
         jcenter()
-        //add toasty library
+        //add toasty library and QR generation
         maven { url "https://jitpack.io" }
+
+
     }
 }
 
