@@ -40,7 +40,11 @@
         <activity android:name=".QRandBarcodeGenerateActivity" />
         <activity android:name=".CustomStyleActivity" />
         <activity android:name=".TestCalenderActivity" />
-        <activity android:name=".BottomNavigationBarActivity"></activity>
+        <activity android:name=".BottomNavigationBarActivity" />
+        <activity
+            android:name=".SampleFragmentActivity"
+            android:label="@string/title_activity_sample_fragment"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

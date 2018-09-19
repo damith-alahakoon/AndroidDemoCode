@@ -2,4 +2,6 @@
     <string name="app_name">MyDemoCode</string>
     <string name="title_activity_json_request">JsonRequestActivity</string>
     <string name="error_message">Error Toast</string>
+    <string name="title_activity_sample_fragment">SampleFragmentActivity</string>
+    <string name="action_settings">Settings</string>
 </resources>

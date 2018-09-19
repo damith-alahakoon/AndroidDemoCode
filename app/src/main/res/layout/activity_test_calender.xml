@@ -5,5 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TestCalenderActivity">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <Chronometer
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/chronometer"
+          android:textSize="60sp"
+          android:fontFamily="sans-serif-light"
+          android:layout_alignBottom="@+id/recordProgressBar"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="64dp" />
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:onClick="stopChronometer"
+          android:text="Start time"/>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:onClick="startChronometer"
+          android:text="Stop time"/>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:onClick="restartChronometer"
+          android:text="reStart time"/>
+
+  </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
