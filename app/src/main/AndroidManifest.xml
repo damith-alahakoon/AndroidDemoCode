@@ -32,7 +32,6 @@
         <activity android:name=".QRScanerActivity" />
         <activity android:name=".CustomSpinnerActivity" />
         <activity android:name=".AlertBoxActivity" />
-        <activity android:name=".CustomListViewActivity" />
         <activity android:name=".LogFileActivity" />
         <activity android:name=".UploadFileVollyActivity" />
         <activity android:name=".FormValidationActivity" />
@@ -47,6 +46,9 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".IntenTypeActivity" />
         <activity android:name=".samplefragment.TestFragmentActivity" />
+        <activity android:name=".customListview.CustomListActivity" />
+        <activity android:name=".SQLight.TestSqlightActivity" />
+        <activity android:name=".SheredpereranceTestActivity"></activity>
     </application>
 
 </manifest>

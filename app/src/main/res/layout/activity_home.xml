@@ -34,6 +34,18 @@
             android:layout_marginTop="10dp"
             android:text="List view"
             android:onClick="testListView"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Custom Listview"
+            android:onClick="customListView"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="recylerTest"
+            android:layout_marginTop="10dp"
+            android:text="Custom RecyclerView"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -53,6 +65,12 @@
             android:layout_marginTop="10dp"
             android:text="QR and Barcode generation"
             android:onClick="generateQRBarcode"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Shared Preferance"
+            android:onClick="sharedPreferanceTest"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -132,12 +150,7 @@
             android:onClick="bottomNaviBarTest"
             android:layout_marginTop="10dp"
             android:text="Bottom Navigation Bar"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="recylerTest"
-            android:layout_marginTop="10dp"
-            android:text="Test RecyclerView"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

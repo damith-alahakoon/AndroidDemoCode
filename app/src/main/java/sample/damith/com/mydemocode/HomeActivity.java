@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import sample.damith.com.mydemocode.customListview.CustomListActivity;
 import sample.damith.com.mydemocode.customRecycler.RecyclerViewActivity;
 import sample.damith.com.mydemocode.samplefragment.TestFragmentActivity;
 
@@ -24,9 +25,16 @@ public class HomeActivity extends AppCompatActivity {
     public void testListView(View view){
         startActivity(new Intent(HomeActivity.this,ListViewActivity.class));
     }
+    public void customListView(View view){
+        startActivity(new Intent(HomeActivity.this,CustomListActivity.class));
+    }
     public void testFragment(View view){
         startActivity(new Intent(HomeActivity.this,TestFragmentActivity.class));
     }
+    public void  sharedPreferanceTest(View view){
+        startActivity(new Intent(HomeActivity.this,SheredpereranceTestActivity.class));
+    }
+
     public void uploadFileVolly(View view){
         startActivity(new Intent(HomeActivity.this,UploadFileVollyActivity.class));
     }

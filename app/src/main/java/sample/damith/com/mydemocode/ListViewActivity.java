@@ -50,7 +50,5 @@ public class ListViewActivity extends AppCompatActivity {
             }
         });
     }
-    public void customListView(View view){
-        startActivity(new Intent(this,CustomListViewActivity.class));
-    }
+
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AlertBoxActivity">
+    tools:context=".SQLight.TestSqlightActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,21 +15,9 @@
             android:layout_marginBottom="15dp"
             android:layout_marginTop="15dp"
             android:gravity="center"
-            android:text="AlertBox"
+            android:text="SQLight Demo"
             android:textSize="20sp"
             android:textStyle="bold" />
-        <Button
-            android:id="@+id/btn_validation4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="alerWarning"
-            android:text="Alert warning" />
-
-        <Button
-            android:id="@+id/btn_validation1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button error" />
 
 
     </LinearLayout>
