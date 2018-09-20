@@ -3,30 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".customRecycler.RecyclerViewActivity">
+    tools:context=".IntenTypeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:orientation="vertical">
 
-        <TextView
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:text="Recyclerview Demo" />
+            android:onClick="SearchGoogle"
+            android:text="Search  Google" />
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerview_demo"
+        <WebView
+            android:id="@+id/web_view1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
     </LinearLayout>
-
-
 </android.support.constraint.ConstraintLayout>

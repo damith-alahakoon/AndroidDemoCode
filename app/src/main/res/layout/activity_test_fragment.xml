@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".samplefragment.TestFragmentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/fragment_demo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragment Demo" />
+
+        <EditText
+            android:id="@+id/activity_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Activity Input"
+            android:inputType="text" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pass data to fragment"
+            android:onClick="dataTofragment"/>
+
+        <fragment
+            android:id="@+id/fragment3"
+            android:name="sample.damith.com.mydemocode.samplefragment.TopFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="sample.damith.com.mydemocode.samplefragment.BottomFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -34,6 +34,13 @@
             android:layout_marginTop="10dp"
             android:text="List view"
             android:onClick="testListView"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Test Fragment"
+            android:onClick="testFragment"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -100,6 +107,13 @@
             android:onClick="saveLogs"
             android:layout_marginTop="10dp"
             android:text="Save Logs"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="intentType"
+            android:layout_marginTop="10dp"
+            android:text="Intent Type"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
