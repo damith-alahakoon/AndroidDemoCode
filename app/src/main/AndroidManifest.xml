@@ -48,7 +48,8 @@
         <activity android:name=".samplefragment.TestFragmentActivity" />
         <activity android:name=".customListview.CustomListActivity" />
         <activity android:name=".SQLight.TestSqlightActivity" />
-        <activity android:name=".SheredpereranceTestActivity"></activity>
+        <activity android:name=".SheredpereranceTestActivity" />
+        <activity android:name=".SendDataToAppActivity"></activity>
     </application>
 
 </manifest>

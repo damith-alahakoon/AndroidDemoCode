@@ -22,6 +22,9 @@ public class HomeActivity extends AppCompatActivity {
     public void testJson(View view){
         startActivity(new Intent(HomeActivity.this,JsonRequestActivity.class));
     }
+    public void sendDataToApp(View view){
+        startActivity(new Intent(HomeActivity.this,SendDataToAppActivity.class));
+    }
     public void testListView(View view){
         startActivity(new Intent(HomeActivity.this,ListViewActivity.class));
     }

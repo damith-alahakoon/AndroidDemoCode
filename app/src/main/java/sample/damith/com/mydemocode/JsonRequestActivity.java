@@ -60,7 +60,8 @@ public class JsonRequestActivity extends AppCompatActivity {
     }
 
     public void readJsonArray(View view) {
-        makeJsonObjectRequest();
+        //makeJsonObjectRequest();
+        JsonObjectRequse();
     }
 
     private void makeJsonObjectRequest() {
@@ -127,7 +128,7 @@ public class JsonRequestActivity extends AppCompatActivity {
         RequestQueue requestQueue = Volley.newRequestQueue(JsonRequestActivity.this);
         try {
             JSONObject jsonBody = new JSONObject();
-            String URL = "https://";
+            String URL = "https://reqres.in/api/unknown";
 
 //        jsonBody.put("first_name", bdFirstName);
 //        jsonBody.put("surname", bdSurname);
