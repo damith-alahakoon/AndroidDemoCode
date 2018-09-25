@@ -3,5 +3,13 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="color_wight">#FF02FF</color>
+    <color name="color_wight">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="drakRed">#660031</color>
+    <color name="red">#FF0001</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#FF8C00</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="gradientLight">#4d4d4d</color>
+    <color name="gradientDark">#323232</color>
 </resources>
