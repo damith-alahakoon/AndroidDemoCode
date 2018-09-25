@@ -37,7 +37,6 @@ public class HomeActivity extends AppCompatActivity {
     public void  sharedPreferanceTest(View view){
         startActivity(new Intent(HomeActivity.this,SheredpereranceTestActivity.class));
     }
-
     public void uploadFileVolly(View view){
         startActivity(new Intent(HomeActivity.this,UploadFileVollyActivity.class));
     }
@@ -82,6 +81,9 @@ public class HomeActivity extends AppCompatActivity {
     }
     public void recylerTest(View view){
         startActivity(new Intent(HomeActivity.this,RecyclerViewActivity.class));
+    }
+    public void testNotification(View view){
+        startActivity(new Intent(HomeActivity.this,TestNotificationActivity.class));
     }
 
 }
